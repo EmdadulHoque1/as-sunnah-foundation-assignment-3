@@ -1,0 +1,625 @@
+/*!==========================================================================
+       media query Styles  
+       ========================================================================== */
+/** Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	/* common styls */
+
+	.contact-form,
+	.container {
+		max-width: 90%;
+	}
+
+	.d-grid {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/*! flex */
+	.d-flex {
+		flex-direction: column;
+	}
+
+	.container {
+		margin: 0 auto;
+	}
+
+
+	/** navbar */
+	/* .navbar {
+		background-color: var(--primary-color);
+		width: 100%;
+		height: 100%;
+		position: relative;
+	} */
+
+	.navbar.active .navmenu,
+	.navmenu {
+		width: 100%;
+		background-color: var(--white-color-100);
+		left: 0;
+		box-shadow: rgba(0, 0, 0, 0.16) 0 2px 5px 0,
+			rgba(0, 0, 0, 0.12) 0 2px 10px 0;
+		z-index: 999;
+	}
+
+	.navmenu {
+		margin-top: 0.125rem;
+		display: none;
+		position: fixed;
+		top: 0;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.navbar.active .navmenu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		padding-top: 20px;
+	}
+
+	.navbar.active .navmenu li {
+		margin-bottom: 20px;
+	}
+
+	.navbar.active .navmenu li a {
+		padding: 10px 20px;
+	}
+
+
+	h1 {
+		font-size: 2.5rem;
+		line-height: 4rem;
+
+
+	}
+
+	.banner-tittle {
+		padding-top: 8rem;
+
+	}
+
+	.banner-tittle p {
+		font-size: var(--h3-font-size);
+		margin-top: 0.5rem;
+	}
+
+	.banner-icon {
+		padding: 8.5rem 0 2rem 0;
+	}
+
+	.design-img,
+	.design-img img {
+		margin-top: 3rem;
+	}
+
+	/*! design sec */
+	.design-img img {
+		width: 95%;
+		height: 50%;
+	}
+
+	/*! work */
+	.work-parent {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	/* price */
+	.price-card {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.price-tittle h3 {
+		font-size: 18px;
+	}
+
+	/* contact */
+	.contact-form {
+		margin-top: 2rem;
+	}
+
+	.send-btn {
+		text-align: center;
+		margin-top: 0.5rem;
+	}
+
+
+	.footer-btn {
+		width: 35%;
+
+	}
+
+}
+
+/** Small devices (portrait tablets and large phones, 601px and up 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+
+	/* common styles */
+	.about-cart,
+	.banner-tittle,
+	.contact-parent,
+	.d-flex,
+	.info,
+	h1 {
+		max-width: 90%;
+	}
+
+	/** btn */
+	.black-btn {
+		font-size: 1.8rem;
+		padding: 1.5rem 2rem;
+	}
+
+
+	.responsive h2 {
+		font-size: 2.5rem;
+	}
+
+	.banner-tittle p,
+	.responsive h3 {
+		font-size: 1.6rem;
+	}
+
+	.responsive p {
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
+
+	.powerd,
+	.responsive h4 {
+		font-size: 1.5rem;
+	}
+
+	.d-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 2rem;
+	}
+
+	.grid-t-c-2 {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 3rem;
+	}
+
+	.d-flex {
+		flex-direction: column;
+	}
+
+	/** navbar */
+	.navbar.active .navmenu,
+	.navmenu {
+		left: 0;
+		box-shadow: rgba(0, 0, 0, 0.16) 0 2px 5px 0,
+			rgba(0, 0, 0, 0.12) 0 2px 10px 0;
+		z-index: 999;
+		width: 100%;
+		background-color: var(--white-color-100);
+	}
+
+	.month h3,
+	.navbar.active .navmenu,
+	.navmenu {
+		background-color: var(--white-color-100);
+	}
+
+	.navmenu {
+		margin-top: 0.125rem;
+		display: none;
+		position: fixed;
+		top: 0;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.navbar.active .navmenu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		padding-top: 20px;
+	}
+
+	.navbar.active .navmenu li {
+		margin-bottom: 20px;
+	}
+
+	.navbar.active .navmenu li a {
+		padding: 10px 20px;
+	}
+
+	/** banner section */
+	h1 {
+		font-size: 3rem;
+		line-height: 1.8;
+	}
+
+	.banner-btn {
+		font-size: 2rem;
+		padding: 1.7rem;
+	}
+
+	.banner-tittle {
+		padding-top: 21rem;
+
+	}
+
+	.banner-tittle p {
+		font-size: 1.5625rem;
+		margin-top: 0.5rem;
+	}
+
+	.banner-icon {
+		padding: 8.5rem 0 2rem 0;
+		font-size: 2rem;
+	}
+
+
+	/** design   */
+	.design-img {
+		margin-top: 3rem;
+	}
+
+	/** team   */
+	.team-cart {
+		max-width: 95%;
+	}
+
+	.team-cart-btn {
+		width: 90%;
+		font-size: 1.3rem;
+	}
+
+	/** work   */
+	.work-card {
+		width: 22.3rem;
+		height: 15rem;
+	}
+
+	.work-card img {
+		width: 100%;
+		height: 100%;
+	}
+
+	/** price   */
+	.price-card {
+		width: 90%;
+	}
+
+	.price-card p {
+		height: 6rem;
+		font-size: 1.5rem;
+	}
+
+	.price-card p span {
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
+
+	.month h3 {
+		text-align: center;
+		padding-top: 1.625rem;
+		font-size: 2.875rem;
+	}
+
+	.month p {
+		font-size: 1.8rem;
+	}
+
+	.div-btn {
+		height: 9.1875rem;
+		background-color: #f1f1f1;
+		display: grid;
+		place-content: center;
+	}
+
+	.price-card h2 {
+		height: 10rem;
+	}
+
+	.pro-card h2 {
+		height: 11rem;
+		background-color: var(--red-orange-color);
+	}
+
+	/** contact */
+	.contact-form {
+		margin-top: 2rem;
+	}
+
+	/** footer */
+	.footer-icon i {
+		font-size: 2rem;
+		margin-top: 1.5rem;
+	}
+}
+
+/** Large devices (laptops/desktops, 769px and up 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+	/* * common styles */
+	.btn,
+	body,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		font-family: Raleway, sans-serif;
+	}
+
+	.about-cart,
+	.banner-tittle,
+	.contact-parent,
+	.d-flex,
+	.info,
+	h1 {
+		max-width: 90%;
+	}
+
+	.btn {
+		font-weight: 300;
+	}
+
+	.black-btn {
+		font-size: 1.8rem;
+		padding: 1.3rem 2rem;
+	}
+
+	h1 {
+		font-size: 5rem;
+		line-height: 6rem;
+	}
+
+	.responsive h2 {
+		font-size: 2.5rem;
+	}
+
+	.responsive h3 {
+		font-size: 1.6rem;
+	}
+
+	.responsive p {
+		font-size: 1.25rem;
+		line-height: 2rem;
+	}
+
+	.d-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 2rem;
+	}
+
+	.grid-t-c-2 {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 3rem;
+	}
+
+	.d-flex {
+		flex-direction: column;
+	}
+
+	/* .navbar {
+		background-color: var(--primary-color);
+		width: 100%;
+		height: 100%;
+		position: relative;
+	} */
+
+	.navbar.active .navmenu,
+	.navmenu {
+		width: 100%;
+		background-color: var(--white-color-100);
+		left: 0;
+		box-shadow: rgba(0, 0, 0, 0.16) 0 2px 5px 0,
+			rgba(0, 0, 0, 0.12) 0 2px 10px 0;
+		z-index: 999;
+	}
+
+	.navmenu {
+		margin-top: 0.125rem;
+		display: none;
+		position: fixed;
+		top: 0;
+	}
+
+	.hamburger-menu {
+		display: flex;
+	}
+
+	.navbar.active .navmenu {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 60px;
+		padding-top: 20px;
+	}
+
+	.navbar.active .navmenu li {
+		margin-bottom: 20px;
+	}
+
+	.navbar.active .navmenu li a {
+		padding: 10px 20px;
+	}
+
+	/** banner  */
+	h1 {
+		font-size: 4rem;
+		line-height: 6rem;
+	}
+
+	.banner-btn {
+		font-size: 2rem;
+		padding: 1.4rem;
+		opacity: 10;
+	}
+
+	.banner-tittle {
+		padding-top: 21rem;
+
+	}
+
+	.banner-tittle p {
+		font-size: 1.5625rem;
+		margin-top: 0.5rem;
+	}
+
+	.banner-icon {
+		padding: 14.5rem 0 2rem 0;
+		font-size: 2rem;
+	}
+
+
+	/**  design  */
+	.design-img {
+		margin-top: 3rem;
+	}
+
+	/** team  */
+	.team-cart {
+		max-width: 95%;
+	}
+
+	.team-cart-btn {
+		width: 90%;
+		font-size: 1.3rem;
+	}
+
+	/** work  */
+	.work-card {
+		width: 24rem;
+		height: 15rem;
+	}
+
+	.work-card img {
+		width: 95%;
+		margin: 0 auto;
+		height: 100%;
+	}
+
+	.position-icon {
+		right: 2.5rem;
+	}
+
+	/** price  */
+	.powerd,
+	.price-card p {
+		font-size: 1.5rem;
+	}
+
+	.price-card {
+		width: 90%;
+	}
+
+	.price-card p {
+		height: 6rem;
+	}
+
+	.price-card p span {
+		font-weight: 700;
+		font-size: 1.8rem;
+	}
+
+	.month h3 {
+		text-align: center;
+		padding-top: 1.625rem;
+		font-size: 2.875rem;
+		background-color: var(--white-color-100);
+	}
+
+	.month p {
+		font-size: 1.8rem;
+	}
+
+	.div-btn {
+		height: 9.1875rem;
+		background-color: #f1f1f1;
+		display: grid;
+		place-content: center;
+	}
+
+	.price-card h2 {
+		height: 10rem;
+	}
+
+	.pro-card h2 {
+		height: 11rem;
+		background-color: var(--red-orange-color);
+	}
+
+	/** contact  */
+
+	.contact-form {
+		margin-top: 2rem;
+	}
+
+	/** footer  */
+	.footer-btn {
+		width: 30%;
+	}
+
+	.footer-icon i {
+		font-size: 2rem;
+	}
+}
+
+/** Large devices (laptops/desktops, 993px and up 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+	.d-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-row-gap: 2rem;
+	}
+
+	.grid-t-c-2 {
+		grid-template-columns: repeat(1, 1fr);
+		grid-row-gap: 3rem;
+	}
+
+	#design {
+		text-align: center;
+	}
+
+	.design-img {
+		margin-top: 2rem;
+	}
+
+	.d-flex {
+		flex-direction: column;
+	}
+
+	/** price */
+	.price-card {
+		width: 90%;
+	}
+
+	/** contact */
+	.contact-form {
+		margin-top: 2rem;
+	}
+
+	.banner-tittle {
+		padding-top: 14rem;
+
+	}
+
+	.banner-tittle p {
+		font-size: 1.5625rem;
+		margin-top: 1rem;
+	}
+
+	.banner-icon {
+		padding: 7.5rem 0 1rem 0;
+		font-size: 2rem;
+	}
+
+
+}
